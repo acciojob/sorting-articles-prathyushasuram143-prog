@@ -40,6 +40,11 @@ bands.sort((a, b) => {
 // Display the sorted bands
 bands.forEach((item) => {
     const li = document.createElement("li");
+	li.style.height="40px";
+	li.style.width="45";
+	li.style.padding="1px"
+	li.style.borderWidth = "1px";
+    li.style.borderStyle = "solid";
     li.textContent = item;
     band.appendChild(li);
 });
